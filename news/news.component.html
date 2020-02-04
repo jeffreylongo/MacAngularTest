@@ -1,3 +1,11 @@
 <p>
-  news works!
+  News
 </p>
+
+<div *ngFor="let story of news">
+  <a [routerLink]="['']">{{ story | json}}</a>
+<hr>
+</div>
+<br>
+<hr>
+<br>

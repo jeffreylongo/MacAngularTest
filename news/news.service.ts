@@ -7,6 +7,7 @@ const newsApiURL = 'https://newsapi.org/v2/top-headlines?' +
 'apiKey=7c5a9d0602604ea5a8306cc70fd12e37';
 const httpOptions = {
   headers: new HttpHeaders({
+    'Access-Control-Allow-Headers': '*',
     'Access-Control-Allow-Origin': '*'
   })
 };
