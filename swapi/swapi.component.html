@@ -1,0 +1,99 @@
+
+
+<div class="container">
+  <div class="row">
+    <h1>Planets</h1>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3>Name</h3>
+      <div *ngFor="let planet of planets">
+        {{ planet.name }}
+        <hr>
+      </div>
+    </div>
+    <div class="col">
+      <h3>Climate</h3>
+      <div *ngFor="let planet of planets">
+        {{ planet.climate }}
+        <hr>
+      </div>
+    </div>
+    <div class="col">
+      <h3>Population</h3>
+      <div *ngFor="let planet of planets">
+        {{ planet.population }}
+        <hr>
+      </div>
+    </div>
+    <div class="col">
+      <h3>Terrain</h3>
+      <div *ngFor="let planet of planets">
+        {{ planet.terrain }}
+        <hr>
+      </div>
+    </div>
+    <div class="col">
+      <h3>Gravity</h3>
+      <div *ngFor="let planet of planets">
+        {{ planet.gravity }}
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- <div *ngFor="let person of people">
+  <a [routerLink]="['/character', 1]">{{ person | json}}</a>
+<hr>
+</div>
+<br>
+<hr>
+<br> -->
+
+
+<div *ngFor="let planet of planets">
+      <a [routerLink]="['/character', 1]">{{ planet | json}}</a>
+    <hr>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+<div *ngFor="let specie of species">
+      <a [routerLink]="['/character', 1]">{{ specie | json}}</a>
+    <hr>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+<div *ngFor="let starship of starships">
+        <a [routerLink]="['/character', 1]">{{ starship | json}}</a>
+      <hr>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+<div *ngFor="let vehicle of vehicles">
+      <a [routerLink]="['/character', 1]">{{ vehicle | json}}</a>
+    <hr>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+<div *ngFor="let film of films">
+    <a [routerLink]="['/character', 1]">{{ film | json}}</a>
+  <hr>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+
+
+
