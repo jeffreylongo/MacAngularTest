@@ -5,7 +5,8 @@ import { Observable } from 'rxjs';
 const swapi = 'https://swapi.co/api/';
 const httpOptions = {
   headers: new HttpHeaders({
-    'Access-Control-Allow-Origin': '*'
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers' : '*'
   })
 };
 @Injectable({
@@ -25,27 +26,27 @@ export class SwapiService {
 
   getFilms(): Observable<any> {
     return this.httpClient
-      .get(swapi + 'films');
+      .get(swapi + 'films', httpOptions);
   }
 
   getPlanets(): Observable<any> {
     return this.httpClient
-      .get(swapi + 'planets');
+      .get(swapi + 'planets', httpOptions);
   }
 
   getSpecies(): Observable<any> {
     return this.httpClient
-      .get(swapi + 'species');
+      .get(swapi + 'species', httpOptions);
   }
 
   getStarships(): Observable<any> {
     return this.httpClient
-      .get(swapi + 'starships');
+      .get(swapi + 'starships', httpOptions);
   }
 
   getVehicles(): Observable<any> {
     return this.httpClient
-      .get(swapi + 'vehicles');
+      .get(swapi + 'vehicles', httpOptions);
   }
 
   constructor(private httpClient: HttpClient) { }

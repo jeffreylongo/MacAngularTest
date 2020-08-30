@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CharacterComponent } from './character/character.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
+import { MusicComponent } from './music/music.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NewsComponent } from './news/news.component';
     ContactComponent,
     CharacterComponent,
     AboutComponent,
-    NewsComponent
+    NewsComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,

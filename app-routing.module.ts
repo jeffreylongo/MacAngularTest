@@ -7,10 +7,12 @@ import { ContactComponent } from './contact/contact.component';
 import { CharacterComponent } from './character/character.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
+import { MusicComponent } from './music/music.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'music', component: MusicComponent },
   { path: 'swapi', component: SwapiComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'character/:id', component: CharacterComponent },
